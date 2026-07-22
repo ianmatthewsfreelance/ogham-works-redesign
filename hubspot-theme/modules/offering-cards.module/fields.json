@@ -8,15 +8,10 @@
     "occurrence": { "min": 1, "max": 6, "default": 3, "sorting_label_field": "heading" },
     "children": [
       {
-        "name": "icon_variant",
-        "label": "Icon style",
-        "type": "choice",
-        "choices": [
-          ["consulting", "Consulting"],
-          ["enrollem", "Enrollem"],
-          ["formid", "Form Identifier"]
-        ],
-        "default": "consulting"
+        "name": "icon",
+        "label": "Icon",
+        "type": "image",
+        "default": { "size_type": "auto", "src": "", "alt": "" }
       },
       { "name": "heading", "label": "Heading", "type": "text", "default": "Consulting" },
       {
@@ -31,7 +26,7 @@
     ],
     "default": [
       {
-        "icon_variant": "consulting",
+        "icon": { "size_type": "auto", "src": "", "alt": "Consulting" },
         "heading": "Consulting",
         "description": "<p>Hands-on HubSpot implementation, CRM cleanup, and automation strategy for teams who need more than a template.</p>",
         "badge_text": "",
@@ -39,7 +34,7 @@
         "link_href": "/consulting"
       },
       {
-        "icon_variant": "enrollem",
+        "icon": { "size_type": "auto", "src": "", "alt": "Enrollem" },
         "heading": "Enrollem",
         "description": "<p>Automatic HubSpot sequence enrollment, on any trigger you choose. No Enterprise plan required.</p>",
         "badge_text": "★ 4.3 (21) on the Marketplace",
@@ -47,7 +42,7 @@
         "link_href": "/enrollem"
       },
       {
-        "icon_variant": "formid",
+        "icon": { "size_type": "auto", "src": "", "alt": "HS Form Identifier" },
         "heading": "HS Form Identifier",
         "description": "<p>Free Chrome extension that detects HubSpot forms — and 35+ other providers — on any site you're viewing.</p>",
         "badge_text": "Totally free",
