@@ -1,0 +1,13 @@
+{
+  "label": "Site header",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "help_text": "Sticky nav with brand mark, links, and a CTA button. After adding this to your pages, use \"Make Global\" in the page editor so edits sync everywhere.",
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "items",
+    "label": "List items",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 1, "max": 8, "default": 3, "sorting_label_field": "text" },
+    "children": [
+      { "name": "text", "label": "Item text", "type": "text", "default": "List item" }
+    ],
+    "default": [
+      { "text": "Apps scoped to one specific problem, not a bloated all-in-one suite" },
+      { "text": "Consulting from people who build directly on the HubSpot APIs" },
+      { "text": "No Enterprise-plan gatekeeping — most of what we build runs on Professional" }
+    ]
+  },
+  {
+    "name": "max_width",
+    "label": "Max width (px, blank for full width)",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  }
+]

@@ -1,0 +1,47 @@
+<!--
+templateType: page
+isAvailableForNewContent: false
+-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ standard_header_includes }}
+  <title>{{ page_meta.html_title }}</title>
+  <meta name="description" content="{{ page_meta.meta_description }}">
+  <link rel="stylesheet" href="{{ get_asset_url('../../css/theme.css') }}">
+  <style>
+    @font-face{
+      font-family:'Plex Mono Ogham';
+      font-weight:600;
+      font-style:normal;
+      font-display:swap;
+      src:url('{{ get_asset_url("../../fonts/ibm-plex-mono-600.woff2") }}') format('woff2');
+    }
+    @font-face{
+      font-family:'Plex Mono Ogham';
+      font-weight:700;
+      font-style:normal;
+      font-display:swap;
+      src:url('{{ get_asset_url("../../fonts/ibm-plex-mono-700.woff2") }}') format('woff2');
+    }
+    :root{
+      --paper: {{ theme.paper_color.color }};
+      --ink: {{ theme.ink_color.color }};
+      --ink-soft: {{ theme.ink_soft_color.color }};
+      --line: {{ theme.line_color.color }};
+      --accent: {{ theme.accent_color.color }};
+      --accent-ink: {{ theme.accent_ink_color.color }};
+    }
+  </style>
+</head>
+<body>
+  {% module "header" path="../../modules/site-header.module" %}
+  <main>
+    {% block body %}{% end_block %}
+  </main>
+  {% module "footer" path="../../modules/site-footer.module" %}
+  {{ standard_footer_includes }}
+</body>
+</html>

@@ -1,0 +1,5 @@
+<ul class="stem-list"{% if module.max_width %} style="max-width: {{ module.max_width }};"{% endif %}>
+  {% for item in module.items %}
+    <li>{{ item.text }}</li>
+  {% endfor %}
+</ul>

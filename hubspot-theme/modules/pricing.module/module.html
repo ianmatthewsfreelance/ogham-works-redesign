@@ -1,0 +1,12 @@
+<div class="pricing-grid">
+  {% for tier in module.tiers %}
+    <div class="price-card{% if tier.featured %} is-featured{% endif %}">
+      <span class="price-tag">{{ tier.tag }}</span>
+      <div class="price-value">{{ tier.price }}<span>&nbsp;/ month</span></div>
+      <p class="price-note">{{ tier.note }}</p>
+      <ul class="price-list">
+        {% for feature in tier.features %}<li>{{ feature.text }}</li>{% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

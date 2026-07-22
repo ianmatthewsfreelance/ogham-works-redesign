@@ -1,0 +1,67 @@
+[
+  {
+    "name": "blurb",
+    "label": "Brand blurb",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "default": "<p>Ogham Works builds focused HubSpot apps and provides hands-on consulting for teams who've outgrown the default setup.</p>"
+  },
+  {
+    "name": "product_links",
+    "label": "Product links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 0, "max": 6, "default": 2, "sorting_label_field": "label" },
+    "children": [
+      { "name": "label", "label": "Label", "type": "text", "default": "Enrollem" },
+      { "name": "href", "label": "Link", "type": "text", "default": "/enrollem" }
+    ],
+    "default": [
+      { "label": "Enrollem", "href": "/enrollem" },
+      { "label": "HS Form Identifier", "href": "/form-identifier" }
+    ]
+  },
+  {
+    "name": "company_links",
+    "label": "Company links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 0, "max": 6, "default": 3, "sorting_label_field": "label" },
+    "children": [
+      { "name": "label", "label": "Label", "type": "text", "default": "Consulting" },
+      { "name": "href", "label": "Link", "type": "text", "default": "/consulting" }
+    ],
+    "default": [
+      { "label": "Consulting", "href": "/consulting" },
+      { "label": "Contact", "href": "/#contact" },
+      { "label": "Support ↗", "href": "https://www.oghamworks.com/support" }
+    ]
+  },
+  {
+    "name": "legal_links",
+    "label": "Legal links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 0, "max": 6, "default": 2, "sorting_label_field": "label" },
+    "children": [
+      { "name": "label", "label": "Label", "type": "text", "default": "Privacy Policy ↗" },
+      { "name": "href", "label": "Link", "type": "text", "default": "https://www.oghamworks.com/privacy-policy" }
+    ],
+    "default": [
+      { "label": "Privacy Policy ↗", "href": "https://www.oghamworks.com/privacy-policy" },
+      { "label": "LinkedIn ↗", "href": "https://www.linkedin.com/company/ogham-works" }
+    ]
+  },
+  {
+    "name": "copyright_text",
+    "label": "Copyright line",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "© 2026 Ogham Works Ltd"
+  }
+]

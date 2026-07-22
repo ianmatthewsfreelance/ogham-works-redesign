@@ -1,0 +1,16 @@
+<section class="hero wrap">
+  {% if module.eyebrow %}<span class="eyebrow">{{ module.eyebrow }}</span>{% endif %}
+  <h1>{{ module.heading }}</h1>
+  <div class="lede">{{ module.lede }}</div>
+  <div class="hero-actions">
+    {% if module.primary_cta_label %}<a class="btn btn-accent" href="{{ module.primary_cta_href }}">{{ module.primary_cta_label }}</a>{% endif %}
+    {% if module.secondary_cta_label %}<a class="btn btn-outline" href="{{ module.secondary_cta_href }}">{{ module.secondary_cta_label }}</a>{% endif %}
+  </div>
+  {% if module.badges|length > 0 %}
+  <div class="hero-badges">
+    {% for badge in module.badges %}
+      <span class="badge{% if badge.accent %} badge-accent{% endif %}">{{ badge.text }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>

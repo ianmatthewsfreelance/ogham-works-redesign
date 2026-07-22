@@ -1,0 +1,19 @@
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 34 20" fill="none" aria-hidden="true">
+        <line x1="17" y1="1" x2="17" y2="19" class="mark-stem" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="4" x2="17" y2="4" class="mark-notch" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="10" x2="17" y2="10" class="mark-notch" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="17" y1="16" x2="28" y2="12" class="mark-notch" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>{{ module.brand_text }}</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      {% for link in module.nav_links %}
+        <a href="{{ link.href }}"{% if request.path == link.href %} aria-current="page"{% endif %}>{{ link.label }}</a>
+      {% endfor %}
+    </nav>
+    <a class="btn btn-accent" href="{{ module.cta_href }}">{{ module.cta_label }}</a>
+  </div>
+</header>

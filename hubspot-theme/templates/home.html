@@ -1,0 +1,104 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+{% dnd_area "main_content" %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/hero.module" %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/proof-strip.module" %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap section-pad">
+          {% dnd_module path="../modules/section-intro.module" %}{% end_dnd_module %}
+          {% dnd_module path="../modules/offering-cards.module" %}{% end_dnd_module %}
+        </div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    <div class="wrap section-pad">
+      {% dnd_row %}
+        {% dnd_column width=7 %}
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Why Ogham Works",
+             heading="Built by HubSpot users, for HubSpot users.",
+             body="<p>We work with HubSpot users daily to understand their pain points — then solve them, one app or one engagement at a time. Every product we ship and every consulting hour we spend comes from the same place: hands actually in the platform.</p>"
+          %}{% end_dnd_module %}
+        {% end_dnd_column %}
+        {% dnd_column width=5 %}
+          {% dnd_module path="../modules/stem-list.module" %}{% end_dnd_module %}
+        {% end_dnd_column %}
+      {% end_dnd_row %}
+    </div>
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    <div class="wrap section-pad">
+      <span id="contact" style="position:relative;top:-90px;display:block;" aria-hidden="true"></span>
+      {% dnd_row %}
+        {% dnd_column width=6 %}
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Get in touch",
+             heading="Let's talk about your HubSpot setup.",
+             body="<p>Whether it's a quick question about Enrollem or a bigger consulting engagement, tell us what you're working on.</p>",
+             links=[
+               {"label": "LinkedIn ↗", "href": "https://www.linkedin.com/company/ogham-works"},
+               {"label": "Enrollem support →", "href": "/enrollem"},
+               {"label": "General support ↗", "href": "https://www.oghamworks.com/support"}
+             ]
+          %}{% end_dnd_module %}
+        {% end_dnd_column %}
+        {% dnd_column width=6 %}
+          <div class="hs-form-wrap">
+            {% dnd_module path="@hubspot/form" %}{% end_dnd_module %}
+          </div>
+        {% end_dnd_column %}
+      {% end_dnd_row %}
+    </div>
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/cta-band.module" %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+{% end_dnd_area %}
+{% end_block %}

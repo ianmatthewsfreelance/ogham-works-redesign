@@ -1,0 +1,50 @@
+[
+  {
+    "name": "paper_color",
+    "label": "Background (paper)",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": { "color": "#FFFFFF", "opacity": 100 }
+  },
+  {
+    "name": "ink_color",
+    "label": "Text (ink)",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": { "color": "#15181A", "opacity": 100 }
+  },
+  {
+    "name": "ink_soft_color",
+    "label": "Secondary text",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": { "color": "#5B615E", "opacity": 100 }
+  },
+  {
+    "name": "line_color",
+    "label": "Hairline / divider",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": { "color": "#E4E1DA", "opacity": 100 }
+  },
+  {
+    "name": "accent_color",
+    "label": "Accent",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": { "color": "#FF5A1F", "opacity": 100 }
+  },
+  {
+    "name": "accent_ink_color",
+    "label": "Accent (hover / on-light text)",
+    "required": false,
+    "locked": false,
+    "type": "color",
+    "default": { "color": "#C2410C", "opacity": 100 }
+  }
+]

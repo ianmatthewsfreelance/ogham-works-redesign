@@ -1,0 +1,44 @@
+[
+  {
+    "name": "brand_text",
+    "label": "Brand text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "OGHAM WORKS"
+  },
+  {
+    "name": "nav_links",
+    "label": "Nav links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 1, "max": 6, "default": 4, "sorting_label_field": "label" },
+    "children": [
+      { "name": "label", "label": "Label", "type": "text", "default": "Home" },
+      { "name": "href", "label": "Link (page path)", "type": "text", "default": "/" }
+    ],
+    "default": [
+      { "label": "Home", "href": "/" },
+      { "label": "Consulting", "href": "/consulting" },
+      { "label": "Enrollem", "href": "/enrollem" },
+      { "label": "Form Identifier", "href": "/form-identifier" }
+    ]
+  },
+  {
+    "name": "cta_label",
+    "label": "CTA button label",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "Get in touch"
+  },
+  {
+    "name": "cta_href",
+    "label": "CTA button link",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "/#contact"
+  }
+]

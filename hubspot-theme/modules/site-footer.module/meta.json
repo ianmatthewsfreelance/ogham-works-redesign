@@ -1,0 +1,13 @@
+{
+  "label": "Site footer",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "help_text": "Footer with brand blurb and three link columns. Use \"Make Global\" in the page editor so edits sync across pages.",
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
+}

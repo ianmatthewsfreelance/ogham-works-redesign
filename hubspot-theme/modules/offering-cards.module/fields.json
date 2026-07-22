@@ -1,0 +1,59 @@
+[
+  {
+    "name": "cards",
+    "label": "Cards",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 1, "max": 6, "default": 3, "sorting_label_field": "heading" },
+    "children": [
+      {
+        "name": "icon_variant",
+        "label": "Icon style",
+        "type": "choice",
+        "choices": [
+          ["consulting", "Consulting"],
+          ["enrollem", "Enrollem"],
+          ["formid", "Form Identifier"]
+        ],
+        "default": "consulting"
+      },
+      { "name": "heading", "label": "Heading", "type": "text", "default": "Consulting" },
+      {
+        "name": "body",
+        "label": "Body",
+        "type": "richtext",
+        "default": "<p>Hands-on HubSpot implementation, CRM cleanup, and automation strategy for teams who need more than a template.</p>"
+      },
+      { "name": "badge_text", "label": "Badge text (optional)", "type": "text", "default": "" },
+      { "name": "link_label", "label": "Link label", "type": "text", "default": "See consulting services →" },
+      { "name": "link_href", "label": "Link", "type": "text", "default": "/consulting" }
+    ],
+    "default": [
+      {
+        "icon_variant": "consulting",
+        "heading": "Consulting",
+        "body": "<p>Hands-on HubSpot implementation, CRM cleanup, and automation strategy for teams who need more than a template.</p>",
+        "badge_text": "",
+        "link_label": "See consulting services →",
+        "link_href": "/consulting"
+      },
+      {
+        "icon_variant": "enrollem",
+        "heading": "Enrollem",
+        "body": "<p>Automatic HubSpot sequence enrollment, on any trigger you choose. No Enterprise plan required.</p>",
+        "badge_text": "★ 4.3 (21) on the Marketplace",
+        "link_label": "Explore Enrollem →",
+        "link_href": "/enrollem"
+      },
+      {
+        "icon_variant": "formid",
+        "heading": "HS Form Identifier",
+        "body": "<p>Free Chrome extension that detects HubSpot forms — and 35+ other providers — on any site you're viewing.</p>",
+        "badge_text": "Totally free",
+        "link_label": "Add to Chrome →",
+        "link_href": "/form-identifier"
+      }
+    ]
+  }
+]

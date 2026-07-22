@@ -1,0 +1,8 @@
+<div class="process">
+  {% for step in module.steps %}
+    <div class="process-step">
+      <span class="step-index">{{ step.index_label }}</span>
+      {{ step.body }}
+    </div>
+  {% endfor %}
+</div>

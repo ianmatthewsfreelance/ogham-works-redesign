@@ -1,0 +1,13 @@
+{
+  "label": "Pricing",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "help_text": "Pricing tier grid. Each tier has its own feature list; toggle \"Featured\" to highlight one.",
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
+}

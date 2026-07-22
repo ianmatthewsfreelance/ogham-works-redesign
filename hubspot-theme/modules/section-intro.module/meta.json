@@ -1,0 +1,13 @@
+{
+  "label": "Section intro",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "help_text": "Eyebrow + heading + optional intro paragraph, with an optional list of extra links (used e.g. for \"prefer somewhere else\" contact links).",
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
+}

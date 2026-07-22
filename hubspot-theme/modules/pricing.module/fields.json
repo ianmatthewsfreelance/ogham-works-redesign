@@ -1,0 +1,60 @@
+[
+  {
+    "name": "tiers",
+    "label": "Tiers",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 1, "max": 5, "default": 3, "sorting_label_field": "tag" },
+    "children": [
+      { "name": "tag", "label": "Tier name", "type": "text", "default": "Free" },
+      { "name": "price", "label": "Price", "type": "text", "default": "€0" },
+      { "name": "note", "label": "Note (billing detail)", "type": "text", "default": "50 enrollments / month" },
+      { "name": "featured", "label": "Highlight this tier", "type": "boolean", "default": false },
+      {
+        "name": "features",
+        "label": "Features",
+        "type": "group",
+        "occurrence": { "min": 1, "max": 8, "default": 3, "sorting_label_field": "text" },
+        "children": [
+          { "name": "text", "label": "Feature text", "type": "text", "default": "Feature" }
+        ]
+      }
+    ],
+    "default": [
+      {
+        "tag": "Free",
+        "price": "€0",
+        "note": "50 enrollments / month",
+        "featured": false,
+        "features": [
+          { "text": "Automated sequence enrollment" },
+          { "text": "Dynamic sender assignment" },
+          { "text": "Enroll from associated objects" }
+        ]
+      },
+      {
+        "tag": "Professional",
+        "price": "€40",
+        "note": "250 enrollments / month · no contract · €35/mo billed annually (€420/yr)",
+        "featured": true,
+        "features": [
+          { "text": "Send from any user with a connected inbox and professional seat" },
+          { "text": "Dynamically select contact owner as sender" },
+          { "text": "Unenroll workflow action, unlimited use" }
+        ]
+      },
+      {
+        "tag": "Enterprise",
+        "price": "€100",
+        "note": "5,000 enrollments / month · no contract · €90/mo billed annually (€1,080/yr)",
+        "featured": false,
+        "features": [
+          { "text": "Everything in Professional" },
+          { "text": "5,000 automated sequence enrollments / month" },
+          { "text": "Subject to HubSpot's daily email send limit (max 500/day on Professional seats)" }
+        ]
+      }
+    ]
+  }
+]

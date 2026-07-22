@@ -1,0 +1,25 @@
+[
+  { "name": "eyebrow", "label": "Eyebrow", "required": false, "locked": false, "type": "text", "default": "What we do" },
+  { "name": "heading", "label": "Heading", "required": false, "locked": false, "type": "text", "default": "Two ways we help HubSpot teams" },
+  {
+    "name": "body",
+    "label": "Intro paragraph (optional)",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "default": "<p>Off-the-shelf apps for problems every HubSpot user hits, and hands-on consulting for the problems that need a person in the room.</p>"
+  },
+  {
+    "name": "links",
+    "label": "Extra links (optional)",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 0, "max": 6, "default": 0, "sorting_label_field": "label" },
+    "children": [
+      { "name": "label", "label": "Label", "type": "text", "default": "LinkedIn ↗" },
+      { "name": "href", "label": "Link", "type": "text", "default": "https://www.linkedin.com/company/ogham-works" }
+    ],
+    "default": []
+  }
+]

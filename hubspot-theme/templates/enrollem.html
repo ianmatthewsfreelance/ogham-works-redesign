@@ -1,0 +1,111 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+{% dnd_area "main_content" %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/hero.module",
+           eyebrow="Enrollem · HubSpot app",
+           heading="Your HubSpot sequences, running on autopilot.",
+           lede="<p>Stop manually enrolling contacts one by one. Enrollem lets your HubSpot workflows do the heavy lifting — enrolling and unenrolling contacts in sequences automatically, on any trigger you choose.</p>",
+           primary_cta_label="Install Now",
+           primary_cta_href="https://www.oghamworks.com#enrollem",
+           secondary_cta_label="See pricing",
+           secondary_cta_href="#pricing",
+           badges=[
+             {"text": "★ 4.3 (21) on the HubSpot Marketplace", "accent": false},
+             {"text": "No Enterprise plan needed", "accent": true}
+           ]
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/proof-strip.module",
+           stats=[
+             {"value": "4.3 ★ (21)", "label": "Rating on HubSpot Marketplace"},
+             {"value": "50 / mo", "label": "Free automated enrollments"},
+             {"value": "No Enterprise", "label": "Plan required to use Enrollem"}
+           ]
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap section-pad">
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Features",
+             heading="What it does",
+             body=""
+          %}{% end_dnd_module %}
+          {% dnd_module path="../modules/stem-list.module",
+             max_width="640px",
+             items=[
+               {"text": "50 automated enrollments per month on our free plan"},
+               {"text": "Choose which team member should be the sender, or dynamically send from the contact owner"},
+               {"text": "Enroll contacts in sequences from associated objects — companies, deals, and custom objects"}
+             ]
+          %}{% end_dnd_module %}
+        </div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap section-pad">
+          <span id="pricing" style="position:relative;top:-90px;display:block;" aria-hidden="true"></span>
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Pricing",
+             heading="Plans that scale with your enrollments",
+             body="<p>Monthly pricing shown below; paying annually brings the effective monthly rate down.</p>"
+          %}{% end_dnd_module %}
+          {% dnd_module path="../modules/pricing.module" %}{% end_dnd_module %}
+        </div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/cta-band.module",
+           heading="Ready to put sequence enrollment on autopilot?",
+           cta_label="Install Now",
+           cta_href="https://www.oghamworks.com#enrollem"
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+{% end_dnd_area %}
+{% end_block %}

@@ -1,0 +1,123 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+{% dnd_area "main_content" %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/hero.module",
+           eyebrow="Consulting",
+           heading="Hands-on HubSpot help from people who build on the platform daily.",
+           lede="<p>Beyond our apps, Ogham Works works directly with HubSpot teams — fixing what's broken, connecting what's disconnected, and building what's missing.</p>",
+           primary_cta_label="Get in touch",
+           primary_cta_href="/#contact",
+           secondary_cta_label="See our apps",
+           secondary_cta_href="/enrollem"
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap section-pad">
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Services",
+             heading="Where we help",
+             body="<p>Four ways teams typically bring us in — scoped to the problem, not a fixed retainer.</p>"
+          %}{% end_dnd_module %}
+          {% dnd_module path="../modules/offering-cards.module",
+             cards=[
+               {"icon_variant": "enrollem", "heading": "Implementation & onboarding", "body": "<p>Get Marketing, Sales, or Service Hub set up right from day one — properties, pipelines, permissions, and the automations that should exist from the start.</p>", "badge_text": "", "link_label": "", "link_href": "/consulting"},
+               {"icon_variant": "formid", "heading": "CRM audit & cleanup", "body": "<p>Untangle duplicate properties, dead workflows, and years of quick fixes into a CRM your team can actually trust.</p>", "badge_text": "", "link_label": "", "link_href": "/consulting"},
+               {"icon_variant": "consulting", "heading": "Custom integrations & app development", "body": "<p>The same engineering behind Enrollem, pointed at your stack — custom HubSpot apps, API integrations, and internal tools.</p>", "badge_text": "", "link_label": "", "link_href": "/consulting"},
+               {"icon_variant": "formid", "heading": "Automation & lifecycle strategy", "body": "<p>Sequences, lifecycle stages, and lead routing that match how your team actually sells — not a generic template.</p>", "badge_text": "", "link_label": "", "link_href": "/consulting"}
+             ]
+          %}{% end_dnd_module %}
+          <p style="margin-top:1.5rem;font-size:.85rem;">Placeholder service lines — edit these fields to your real offerings and pricing.</p>
+        </div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap section-pad">
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Process",
+             heading="How an engagement runs",
+             body=""
+          %}{% end_dnd_module %}
+          {% dnd_module path="../modules/process.module" %}{% end_dnd_module %}
+        </div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    <div class="wrap section-pad">
+      {% dnd_row %}
+        {% dnd_column width=7 %}
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Credibility",
+             heading="Not a generalist agency bolting on HubSpot.",
+             body="<p>It's the only platform we work in — including building Enrollem and HS Form Identifier, two apps used by HubSpot customers on the Marketplace today.</p>"
+          %}{% end_dnd_module %}
+        {% end_dnd_column %}
+        {% dnd_column width=5 %}
+          {% dnd_module path="../modules/offering-cards.module",
+             cards=[
+               {"icon_variant": "enrollem", "heading": "Enrollem", "body": "<p>Automated sequence enrollment, built and supported by us.</p>", "badge_text": "★ 4.3 (21) on the Marketplace", "link_label": "", "link_href": "/enrollem"},
+               {"icon_variant": "formid", "heading": "HS Form Identifier", "body": "<p>A free Chrome extension we built and maintain.</p>", "badge_text": "35+ providers detected", "link_label": "", "link_href": "/form-identifier"}
+             ]
+          %}{% end_dnd_module %}
+        {% end_dnd_column %}
+      {% end_dnd_row %}
+    </div>
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/cta-band.module",
+           heading="Have a HubSpot problem worth an hour of conversation?",
+           cta_label="Get in touch",
+           cta_href="/#contact"
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+{% end_dnd_area %}
+{% end_block %}

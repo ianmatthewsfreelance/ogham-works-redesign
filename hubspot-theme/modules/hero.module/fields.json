@@ -1,0 +1,29 @@
+[
+  { "name": "eyebrow", "label": "Eyebrow", "required": false, "locked": false, "type": "text", "default": "HubSpot apps & consulting" },
+  { "name": "heading", "label": "Heading", "required": false, "locked": false, "type": "text", "default": "We build the HubSpot layer you're missing." },
+  {
+    "name": "lede",
+    "label": "Intro copy",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "default": "<p>Ogham Works builds focused apps that solve real HubSpot workflow problems, and works directly with teams who need hands-on help getting the platform right.</p>"
+  },
+  { "name": "primary_cta_label", "label": "Primary button label", "required": false, "locked": false, "type": "text", "default": "Explore Enrollem" },
+  { "name": "primary_cta_href", "label": "Primary button link", "required": false, "locked": false, "type": "text", "default": "/enrollem" },
+  { "name": "secondary_cta_label", "label": "Secondary button label (leave blank to hide)", "required": false, "locked": false, "type": "text", "default": "See consulting services" },
+  { "name": "secondary_cta_href", "label": "Secondary button link", "required": false, "locked": false, "type": "text", "default": "/consulting" },
+  {
+    "name": "badges",
+    "label": "Badges",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": { "min": 0, "max": 3, "default": 0, "sorting_label_field": "text" },
+    "children": [
+      { "name": "text", "label": "Badge text", "type": "text", "default": "No Enterprise plan needed" },
+      { "name": "accent", "label": "Use accent style", "type": "boolean", "default": true }
+    ],
+    "default": []
+  }
+]

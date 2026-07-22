@@ -1,0 +1,13 @@
+{
+  "label": "CTA band",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "help_text": "Dark full-width band with a heading and one button — used to close out a page.",
+  "host_template_types": ["PAGE"],
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": [],
+  "is_available_for_new_content": true
+}

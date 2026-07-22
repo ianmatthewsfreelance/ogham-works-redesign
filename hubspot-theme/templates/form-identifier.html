@@ -1,0 +1,103 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+{% dnd_area "main_content" %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/hero.module",
+           eyebrow="HS Form Identifier · Free Chrome extension",
+           heading="Identify any HubSpot form. Instantly.",
+           lede="<p>A free Chrome extension that detects HubSpot forms — and 35+ other form providers — on any website you're viewing.</p>",
+           primary_cta_label="Add to Chrome",
+           primary_cta_href="https://www.oghamworks.com#formsiddentifier",
+           secondary_cta_label="See how it works",
+           secondary_cta_href="#features",
+           badges=[
+             {"text": "Totally free · no account required", "accent": true}
+           ]
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap section-pad">
+          <span id="features" style="position:relative;top:-90px;display:block;" aria-hidden="true"></span>
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Features",
+             heading="What it does",
+             body=""
+          %}{% end_dnd_module %}
+          {% dnd_module path="../modules/stem-list.module",
+             max_width="640px",
+             items=[
+               {"text": "Get a direct link to open your HubSpot forms while viewing your own website"},
+               {"text": "Identify non-HubSpot forms on any page"},
+               {"text": "Recognize 35+ different form providers"},
+               {"text": "Completely free — no account required"}
+             ]
+          %}{% end_dnd_module %}
+        </div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        <div class="wrap"><div class="stemline" role="presentation"></div></div>
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    <div class="wrap section-pad">
+      {% dnd_row %}
+        {% dnd_column width=7 %}
+          {% dnd_module path="../modules/section-intro.module",
+             eyebrow="Who it's for",
+             heading="Built for the people doing the QA.",
+             body="<p>HubSpot marketers and consultants use it to quickly confirm which form is live on a page — during audits, QA passes, or when checking a client's or competitor's site.</p>"
+          %}{% end_dnd_module %}
+        {% end_dnd_column %}
+        {% dnd_column width=5 %}
+          {% dnd_module path="../modules/offering-cards.module",
+             cards=[
+               {"icon_variant": "enrollem", "heading": "Part of the Ogham Works toolkit", "body": "<p>Also need to automate sequence enrollment? Enrollem handles that — built by the same team.</p>", "badge_text": "", "link_label": "See Enrollem →", "link_href": "/enrollem"}
+             ]
+          %}{% end_dnd_module %}
+        {% end_dnd_column %}
+      {% end_dnd_row %}
+    </div>
+  {% end_dnd_section %}
+
+  {% dnd_section %}
+    {% dnd_row %}
+      {% dnd_column %}
+        {% dnd_module path="../modules/cta-band.module",
+           heading="See what's really powering that form.",
+           cta_label="Add to Chrome",
+           cta_href="https://www.oghamworks.com#formsiddentifier"
+        %}{% end_dnd_module %}
+      {% end_dnd_column %}
+    {% end_dnd_row %}
+  {% end_dnd_section %}
+
+{% end_dnd_area %}
+{% end_block %}
