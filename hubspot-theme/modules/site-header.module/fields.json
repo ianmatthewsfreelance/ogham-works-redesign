@@ -1,11 +1,15 @@
 [
   {
-    "name": "brand_text",
-    "label": "Brand text",
+    "name": "logo_image",
+    "label": "Logo image",
     "required": false,
     "locked": false,
-    "type": "text",
-    "default": "OGHAM WORKS"
+    "type": "image",
+    "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": "Ogham Works"
+    }
   },
   {
     "name": "nav_links",
