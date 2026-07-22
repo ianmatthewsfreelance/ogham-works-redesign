@@ -13,7 +13,7 @@
     <div>
       <p class="footer-heading">Product</p>
       <div class="footer-links">
-        {% for link in module.product_links %}<a href="{{ link.href }}">{{ link.label }}</a>{% endfor %}
+        {% for link in module.product_links %}<a href="{{ link.href }}">{{ link.text }}</a>{% endfor %}
       </div>
     </div>
     {% endif %}
@@ -21,7 +21,7 @@
     <div>
       <p class="footer-heading">Company</p>
       <div class="footer-links">
-        {% for link in module.company_links %}<a href="{{ link.href }}">{{ link.label }}</a>{% endfor %}
+        {% for link in module.company_links %}<a href="{{ link.href }}">{{ link.text }}</a>{% endfor %}
       </div>
     </div>
     {% endif %}
@@ -29,7 +29,7 @@
     <div>
       <p class="footer-heading">Legal</p>
       <div class="footer-links">
-        {% for link in module.legal_links %}<a href="{{ link.href }}">{{ link.label }}</a>{% endfor %}
+        {% for link in module.legal_links %}<a href="{{ link.href }}">{{ link.text }}</a>{% endfor %}
       </div>
     </div>
     {% endif %}

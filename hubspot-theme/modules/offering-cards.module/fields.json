@@ -20,8 +20,8 @@
       },
       { "name": "heading", "label": "Heading", "type": "text", "default": "Consulting" },
       {
-        "name": "body",
-        "label": "Body",
+        "name": "description",
+        "label": "Description",
         "type": "richtext",
         "default": "<p>Hands-on HubSpot implementation, CRM cleanup, and automation strategy for teams who need more than a template.</p>"
       },
@@ -33,7 +33,7 @@
       {
         "icon_variant": "consulting",
         "heading": "Consulting",
-        "body": "<p>Hands-on HubSpot implementation, CRM cleanup, and automation strategy for teams who need more than a template.</p>",
+        "description": "<p>Hands-on HubSpot implementation, CRM cleanup, and automation strategy for teams who need more than a template.</p>",
         "badge_text": "",
         "link_label": "See consulting services →",
         "link_href": "/consulting"
@@ -41,7 +41,7 @@
       {
         "icon_variant": "enrollem",
         "heading": "Enrollem",
-        "body": "<p>Automatic HubSpot sequence enrollment, on any trigger you choose. No Enterprise plan required.</p>",
+        "description": "<p>Automatic HubSpot sequence enrollment, on any trigger you choose. No Enterprise plan required.</p>",
         "badge_text": "★ 4.3 (21) on the Marketplace",
         "link_label": "Explore Enrollem →",
         "link_href": "/enrollem"
@@ -49,7 +49,7 @@
       {
         "icon_variant": "formid",
         "heading": "HS Form Identifier",
-        "body": "<p>Free Chrome extension that detects HubSpot forms — and 35+ other providers — on any site you're viewing.</p>",
+        "description": "<p>Free Chrome extension that detects HubSpot forms — and 35+ other providers — on any site you're viewing.</p>",
         "badge_text": "Totally free",
         "link_label": "Add to Chrome →",
         "link_href": "/form-identifier"

@@ -1,10 +1,10 @@
 <div class="section-head">
   {% if module.eyebrow %}<span class="eyebrow">{{ module.eyebrow }}</span>{% endif %}
   <h2>{{ module.heading }}</h2>
-  {% if module.body %}<div style="margin-top: 1rem;">{{ module.body }}</div>{% endif %}
+  {% if module.description %}<div style="margin-top: 1rem;">{{ module.description }}</div>{% endif %}
 </div>
 {% if module.links|length > 0 %}
 <div class="link-list">
-  {% for link in module.links %}<a href="{{ link.href }}">{{ link.label }}</a>{% endfor %}
+  {% for link in module.links %}<a href="{{ link.href }}">{{ link.text }}</a>{% endfor %}
 </div>
 {% endif %}

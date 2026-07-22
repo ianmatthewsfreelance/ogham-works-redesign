@@ -13,14 +13,35 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "occurrence": { "min": 0, "max": 6, "default": 2, "sorting_label_field": "label" },
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 2,
+      "sorting_label_field": "text"
+    },
     "children": [
-      { "name": "label", "label": "Label", "type": "text", "default": "Enrollem" },
-      { "name": "href", "label": "Link", "type": "text", "default": "/enrollem" }
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "text",
+        "default": "Enrollem"
+      },
+      {
+        "name": "href",
+        "label": "Link",
+        "type": "text",
+        "default": "/enrollem"
+      }
     ],
     "default": [
-      { "label": "Enrollem", "href": "/enrollem" },
-      { "label": "HS Form Identifier", "href": "/form-identifier" }
+      {
+        "text": "Enrollem",
+        "href": "/enrollem"
+      },
+      {
+        "text": "HS Form Identifier",
+        "href": "/form-identifier"
+      }
     ]
   },
   {
@@ -29,15 +50,39 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "occurrence": { "min": 0, "max": 6, "default": 3, "sorting_label_field": "label" },
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 3,
+      "sorting_label_field": "text"
+    },
     "children": [
-      { "name": "label", "label": "Label", "type": "text", "default": "Consulting" },
-      { "name": "href", "label": "Link", "type": "text", "default": "/consulting" }
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "text",
+        "default": "Consulting"
+      },
+      {
+        "name": "href",
+        "label": "Link",
+        "type": "text",
+        "default": "/consulting"
+      }
     ],
     "default": [
-      { "label": "Consulting", "href": "/consulting" },
-      { "label": "Contact", "href": "/#contact" },
-      { "label": "Support ↗", "href": "https://www.oghamworks.com/support" }
+      {
+        "text": "Consulting",
+        "href": "/consulting"
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact"
+      },
+      {
+        "text": "Support ↗",
+        "href": "https://www.oghamworks.com/support"
+      }
     ]
   },
   {
@@ -46,14 +91,35 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "occurrence": { "min": 0, "max": 6, "default": 2, "sorting_label_field": "label" },
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 2,
+      "sorting_label_field": "text"
+    },
     "children": [
-      { "name": "label", "label": "Label", "type": "text", "default": "Privacy Policy ↗" },
-      { "name": "href", "label": "Link", "type": "text", "default": "https://www.oghamworks.com/privacy-policy" }
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "text",
+        "default": "Privacy Policy ↗"
+      },
+      {
+        "name": "href",
+        "label": "Link",
+        "type": "text",
+        "default": "https://www.oghamworks.com/privacy-policy"
+      }
     ],
     "default": [
-      { "label": "Privacy Policy ↗", "href": "https://www.oghamworks.com/privacy-policy" },
-      { "label": "LinkedIn ↗", "href": "https://www.linkedin.com/company/ogham-works" }
+      {
+        "text": "Privacy Policy ↗",
+        "href": "https://www.oghamworks.com/privacy-policy"
+      },
+      {
+        "text": "LinkedIn ↗",
+        "href": "https://www.linkedin.com/company/ogham-works"
+      }
     ]
   },
   {

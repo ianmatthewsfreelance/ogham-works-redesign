@@ -57,7 +57,7 @@ isAvailableForNewContent: true
           {% dnd_module path="../modules/section-intro.module",
              eyebrow="Why Ogham Works",
              heading="Built by HubSpot users, for HubSpot users.",
-             body="<p>We work with HubSpot users daily to understand their pain points — then solve them, one app or one engagement at a time. Every product we ship and every consulting hour we spend comes from the same place: hands actually in the platform.</p>"
+             description="<p>We work with HubSpot users daily to understand their pain points — then solve them, one app or one engagement at a time. Every product we ship and every consulting hour we spend comes from the same place: hands actually in the platform.</p>"
           %}{% end_dnd_module %}
         {% end_dnd_column %}
         {% dnd_column width=5 %}
@@ -75,11 +75,11 @@ isAvailableForNewContent: true
           {% dnd_module path="../modules/section-intro.module",
              eyebrow="Get in touch",
              heading="Let's talk about your HubSpot setup.",
-             body="<p>Whether it's a quick question about Enrollem or a bigger consulting engagement, tell us what you're working on.</p>",
+             description="<p>Whether it's a quick question about Enrollem or a bigger consulting engagement, tell us what you're working on.</p>",
              links=[
-               {"label": "LinkedIn ↗", "href": "https://www.linkedin.com/company/ogham-works"},
-               {"label": "Enrollem support →", "href": "/enrollem"},
-               {"label": "General support ↗", "href": "https://www.oghamworks.com/support"}
+               {"text": "LinkedIn ↗", "href": "https://www.linkedin.com/company/ogham-works"},
+               {"text": "Enrollem support →", "href": "/enrollem"},
+               {"text": "General support ↗", "href": "https://www.oghamworks.com/support"}
              ]
           %}{% end_dnd_module %}
         {% end_dnd_column %}
@@ -101,4 +101,4 @@ isAvailableForNewContent: true
   {% end_dnd_section %}
 
 {% end_dnd_area %}
-{% end_block %}
+{% endblock %}

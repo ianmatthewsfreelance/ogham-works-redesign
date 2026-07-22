@@ -32,9 +32,9 @@ isAvailableForNewContent: true
       {% dnd_column %}
         {% dnd_module path="../modules/proof-strip.module",
            stats=[
-             {"value": "4.3 ★ (21)", "label": "Rating on HubSpot Marketplace"},
-             {"value": "50 / mo", "label": "Free automated enrollments"},
-             {"value": "No Enterprise", "label": "Plan required to use Enrollem"}
+             {"value": "4.3 ★ (21)", "text": "Rating on HubSpot Marketplace"},
+             {"value": "50 / mo", "text": "Free automated enrollments"},
+             {"value": "No Enterprise", "text": "Plan required to use Enrollem"}
            ]
         %}{% end_dnd_module %}
       {% end_dnd_column %}
@@ -56,7 +56,7 @@ isAvailableForNewContent: true
           {% dnd_module path="../modules/section-intro.module",
              eyebrow="Features",
              heading="What it does",
-             body=""
+             description=""
           %}{% end_dnd_module %}
           {% dnd_module path="../modules/stem-list.module",
              max_width="640px",
@@ -87,7 +87,7 @@ isAvailableForNewContent: true
           {% dnd_module path="../modules/section-intro.module",
              eyebrow="Pricing",
              heading="Plans that scale with your enrollments",
-             body="<p>Monthly pricing shown below; paying annually brings the effective monthly rate down.</p>"
+             description="<p>Monthly pricing shown below; paying annually brings the effective monthly rate down.</p>"
           %}{% end_dnd_module %}
           {% dnd_module path="../modules/pricing.module" %}{% end_dnd_module %}
         </div>
@@ -108,4 +108,4 @@ isAvailableForNewContent: true
   {% end_dnd_section %}
 
 {% end_dnd_area %}
-{% end_block %}
+{% endblock %}

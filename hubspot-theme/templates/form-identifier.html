@@ -42,7 +42,7 @@ isAvailableForNewContent: true
           {% dnd_module path="../modules/section-intro.module",
              eyebrow="Features",
              heading="What it does",
-             body=""
+             description=""
           %}{% end_dnd_module %}
           {% dnd_module path="../modules/stem-list.module",
              max_width="640px",
@@ -73,13 +73,13 @@ isAvailableForNewContent: true
           {% dnd_module path="../modules/section-intro.module",
              eyebrow="Who it's for",
              heading="Built for the people doing the QA.",
-             body="<p>HubSpot marketers and consultants use it to quickly confirm which form is live on a page — during audits, QA passes, or when checking a client's or competitor's site.</p>"
+             description="<p>HubSpot marketers and consultants use it to quickly confirm which form is live on a page — during audits, QA passes, or when checking a client's or competitor's site.</p>"
           %}{% end_dnd_module %}
         {% end_dnd_column %}
         {% dnd_column width=5 %}
           {% dnd_module path="../modules/offering-cards.module",
              cards=[
-               {"icon_variant": "enrollem", "heading": "Part of the Ogham Works toolkit", "body": "<p>Also need to automate sequence enrollment? Enrollem handles that — built by the same team.</p>", "badge_text": "", "link_label": "See Enrollem →", "link_href": "/enrollem"}
+               {"icon_variant": "enrollem", "heading": "Part of the Ogham Works toolkit", "description": "<p>Also need to automate sequence enrollment? Enrollem handles that — built by the same team.</p>", "badge_text": "", "link_label": "See Enrollem →", "link_href": "/enrollem"}
              ]
           %}{% end_dnd_module %}
         {% end_dnd_column %}
@@ -100,4 +100,4 @@ isAvailableForNewContent: true
   {% end_dnd_section %}
 
 {% end_dnd_area %}
-{% end_block %}
+{% endblock %}

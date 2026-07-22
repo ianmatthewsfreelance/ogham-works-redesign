@@ -1,8 +1,22 @@
 [
-  { "name": "eyebrow", "label": "Eyebrow", "required": false, "locked": false, "type": "text", "default": "What we do" },
-  { "name": "heading", "label": "Heading", "required": false, "locked": false, "type": "text", "default": "Two ways we help HubSpot teams" },
   {
-    "name": "body",
+    "name": "eyebrow",
+    "label": "Eyebrow",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "What we do"
+  },
+  {
+    "name": "heading",
+    "label": "Heading",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "Two ways we help HubSpot teams"
+  },
+  {
+    "name": "description",
     "label": "Intro paragraph (optional)",
     "required": false,
     "locked": false,
@@ -15,10 +29,25 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "occurrence": { "min": 0, "max": 6, "default": 0, "sorting_label_field": "label" },
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 0,
+      "sorting_label_field": "text"
+    },
     "children": [
-      { "name": "label", "label": "Label", "type": "text", "default": "LinkedIn ↗" },
-      { "name": "href", "label": "Link", "type": "text", "default": "https://www.linkedin.com/company/ogham-works" }
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "text",
+        "default": "LinkedIn ↗"
+      },
+      {
+        "name": "href",
+        "label": "Link",
+        "type": "text",
+        "default": "https://www.linkedin.com/company/ogham-works"
+      }
     ],
     "default": []
   }

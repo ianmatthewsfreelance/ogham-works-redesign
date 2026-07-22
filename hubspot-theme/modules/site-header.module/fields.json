@@ -13,16 +13,43 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "occurrence": { "min": 1, "max": 6, "default": 4, "sorting_label_field": "label" },
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 4,
+      "sorting_label_field": "text"
+    },
     "children": [
-      { "name": "label", "label": "Label", "type": "text", "default": "Home" },
-      { "name": "href", "label": "Link (page path)", "type": "text", "default": "/" }
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "text",
+        "default": "Home"
+      },
+      {
+        "name": "href",
+        "label": "Link (page path)",
+        "type": "text",
+        "default": "/"
+      }
     ],
     "default": [
-      { "label": "Home", "href": "/" },
-      { "label": "Consulting", "href": "/consulting" },
-      { "label": "Enrollem", "href": "/enrollem" },
-      { "label": "Form Identifier", "href": "/form-identifier" }
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Consulting",
+        "href": "/consulting"
+      },
+      {
+        "text": "Enrollem",
+        "href": "/enrollem"
+      },
+      {
+        "text": "Form Identifier",
+        "href": "/form-identifier"
+      }
     ]
   },
   {

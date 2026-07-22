@@ -5,16 +5,43 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "occurrence": { "min": 1, "max": 6, "default": 4, "sorting_label_field": "value" },
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 4,
+      "sorting_label_field": "value"
+    },
     "children": [
-      { "name": "value", "label": "Value", "type": "text", "default": "4.3 ★ (21)" },
-      { "name": "label", "label": "Label", "type": "text", "default": "Enrollem rating, HubSpot Marketplace" }
+      {
+        "name": "value",
+        "label": "Value",
+        "type": "text",
+        "default": "4.3 ★ (21)"
+      },
+      {
+        "name": "text",
+        "label": "Text",
+        "type": "text",
+        "default": "Enrollem rating, HubSpot Marketplace"
+      }
     ],
     "default": [
-      { "value": "4.3 ★ (21)", "label": "Enrollem rating, HubSpot Marketplace" },
-      { "value": "50 / mo", "label": "Free automated enrollments with Enrollem" },
-      { "value": "35+", "label": "Form providers detected by HS Form Identifier" },
-      { "value": "Free", "label": "HS Form Identifier, no cost to install" }
+      {
+        "value": "4.3 ★ (21)",
+        "text": "Enrollem rating, HubSpot Marketplace"
+      },
+      {
+        "value": "50 / mo",
+        "text": "Free automated enrollments with Enrollem"
+      },
+      {
+        "value": "35+",
+        "text": "Form providers detected by HS Form Identifier"
+      },
+      {
+        "value": "Free",
+        "text": "HS Form Identifier, no cost to install"
+      }
     ]
   }
 ]

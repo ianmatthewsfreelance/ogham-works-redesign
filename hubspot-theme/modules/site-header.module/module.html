@@ -11,7 +11,7 @@
     </a>
     <nav class="nav-links" aria-label="Primary">
       {% for link in module.nav_links %}
-        <a href="{{ link.href }}"{% if request.path == link.href %} aria-current="page"{% endif %}>{{ link.label }}</a>
+        <a href="{{ link.href }}"{% if request.path == link.href %} aria-current="page"{% endif %}>{{ link.text }}</a>
       {% endfor %}
     </nav>
     <a class="btn btn-accent" href="{{ module.cta_href }}">{{ module.cta_label }}</a>

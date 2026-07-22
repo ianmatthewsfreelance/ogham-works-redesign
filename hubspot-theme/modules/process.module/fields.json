@@ -8,12 +8,12 @@
     "occurrence": { "min": 1, "max": 6, "default": 3, "sorting_label_field": "index_label" },
     "children": [
       { "name": "index_label", "label": "Step label", "type": "text", "default": "01 — Discover" },
-      { "name": "body", "label": "Description", "type": "richtext", "default": "<p>Step description.</p>" }
+      { "name": "description", "label": "Description", "type": "richtext", "default": "<p>Step description.</p>" }
     ],
     "default": [
-      { "index_label": "01 — Discover", "body": "<p>A working session on your current setup: what's broken, what's missing, what's actually costing you time.</p>" },
-      { "index_label": "02 — Build", "body": "<p>Scoped, incremental changes, implemented directly in your portal and tested against how your team really works.</p>" },
-      { "index_label": "03 — Handover", "body": "<p>Documentation and a short training pass, so your team owns the result — no dependency on us to keep it running.</p>" }
+      { "index_label": "01 — Discover", "description": "<p>A working session on your current setup: what's broken, what's missing, what's actually costing you time.</p>" },
+      { "index_label": "02 — Build", "description": "<p>Scoped, incremental changes, implemented directly in your portal and tested against how your team really works.</p>" },
+      { "index_label": "03 — Handover", "description": "<p>Documentation and a short training pass, so your team owns the result — no dependency on us to keep it running.</p>" }
     ]
   }
 ]
