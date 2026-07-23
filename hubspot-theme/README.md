@@ -28,7 +28,7 @@ directly in your HubSpot portal.**
 theme.json                 theme metadata
 fields.json                theme-level design tokens (colors)
 css/theme.css               design system CSS, reads the tokens as CSS custom properties
-fonts/                       embedded IBM Plex Mono (headings/labels)
+fonts/                       embedded Inter (variable font, weights 400-700 + italic)
 templates/layouts/base.html  shared <head>, header, footer, font-face + token injection
 templates/home.html          hero, proof strip, offerings, why-us, contact, CTA
 templates/consulting.html    hero, services, process, credibility, CTA

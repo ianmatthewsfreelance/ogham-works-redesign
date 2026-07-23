@@ -13,18 +13,39 @@ isAvailableForNewContent: false
   <link rel="stylesheet" href="{{ get_asset_url('../../css/theme.css') }}">
   <style>
     @font-face{
-      font-family:'Plex Mono Ogham';
+      font-family:'Inter';
+      font-weight:400;
+      font-style:normal;
+      font-display:swap;
+      src:url('{{ get_asset_url("../../fonts/inter-variable.woff2") }}') format('woff2');
+    }
+    @font-face{
+      font-family:'Inter';
+      font-weight:500;
+      font-style:normal;
+      font-display:swap;
+      src:url('{{ get_asset_url("../../fonts/inter-variable.woff2") }}') format('woff2');
+    }
+    @font-face{
+      font-family:'Inter';
       font-weight:600;
       font-style:normal;
       font-display:swap;
-      src:url('{{ get_asset_url("../../fonts/ibm-plex-mono-600.woff2") }}') format('woff2');
+      src:url('{{ get_asset_url("../../fonts/inter-variable.woff2") }}') format('woff2');
     }
     @font-face{
-      font-family:'Plex Mono Ogham';
+      font-family:'Inter';
       font-weight:700;
       font-style:normal;
       font-display:swap;
-      src:url('{{ get_asset_url("../../fonts/ibm-plex-mono-700.woff2") }}') format('woff2');
+      src:url('{{ get_asset_url("../../fonts/inter-variable.woff2") }}') format('woff2');
+    }
+    @font-face{
+      font-family:'Inter';
+      font-weight:400;
+      font-style:italic;
+      font-display:swap;
+      src:url('{{ get_asset_url("../../fonts/inter-variable-italic.woff2") }}') format('woff2');
     }
     :root{
       --paper: {{ theme.paper_color.color }};
