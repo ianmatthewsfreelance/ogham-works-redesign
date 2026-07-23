@@ -1,0 +1,71 @@
+[
+  {
+    "name": "members",
+    "label": "Team members",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 12,
+      "default": 1,
+      "sorting_label_field": "full_name"
+    },
+    "children": [
+      {
+        "name": "photo",
+        "label": "Photo",
+        "type": "image",
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": ""
+        }
+      },
+      {
+        "name": "full_name",
+        "label": "Name",
+        "type": "text",
+        "default": "Full name"
+      },
+      {
+        "name": "role",
+        "label": "Role",
+        "type": "text",
+        "default": "Role / title"
+      },
+      {
+        "name": "bio",
+        "label": "Bio (optional)",
+        "type": "richtext",
+        "default": ""
+      },
+      {
+        "name": "link_label",
+        "label": "Link label (optional)",
+        "type": "text",
+        "default": "Connect ↗"
+      },
+      {
+        "name": "link_href",
+        "label": "Link (optional)",
+        "type": "text",
+        "default": ""
+      }
+    ],
+    "default": [
+      {
+        "photo": {
+          "size_type": "auto",
+          "src": "",
+          "alt": ""
+        },
+        "full_name": "Full name",
+        "role": "Role / title",
+        "bio": "",
+        "link_label": "Connect ↗",
+        "link_href": ""
+      }
+    ]
+  }
+]
