@@ -90,8 +90,8 @@ p{margin:0;color:var(--ink-soft);max-width:60ch;}
 .proof-label{font-size:.85rem;color:var(--ink-soft);margin-top:.15rem;}
 
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:2rem;display:flex;flex-direction:column;gap:.9rem;text-decoration:none;transition:border-color .15s ease;}
-.card:hover{border-color:var(--accent);}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:2rem;display:flex;flex-direction:column;gap:.9rem;text-decoration:none;transition:border-color .15s ease,background-color .15s ease;}
+.card:hover{border-color:var(--accent);background:var(--accent-soft);}
 .card-icon{height:30px;width:auto;max-width:48px;object-fit:contain;}
 .card h3{color:var(--ink);}
 .card .go{margin-top:auto;font-family:var(--font-display);font-weight:600;font-size:.85rem;color:var(--accent-ink);}
