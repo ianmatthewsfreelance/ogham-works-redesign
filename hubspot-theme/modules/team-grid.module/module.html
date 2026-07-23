@@ -1,4 +1,9 @@
 <div class="team-grid-wrap" style="padding: {{ module.spacing.padding.top.value }}{{ module.spacing.padding.top.units }} {{ module.spacing.padding.right.value }}{{ module.spacing.padding.right.units }} {{ module.spacing.padding.bottom.value }}{{ module.spacing.padding.bottom.units }} {{ module.spacing.padding.left.value }}{{ module.spacing.padding.left.units }}; margin: {{ module.spacing.margin.top.value }}{{ module.spacing.margin.top.units }} {{ module.spacing.margin.right.value }}{{ module.spacing.margin.right.units }} {{ module.spacing.margin.bottom.value }}{{ module.spacing.margin.bottom.units }} {{ module.spacing.margin.left.value }}{{ module.spacing.margin.left.units }};">
+  <div class="section-head">
+    {% if module.eyebrow %}<span class="eyebrow">{{ module.eyebrow }}</span>{% endif %}
+    <h2>{{ module.heading }}</h2>
+    {% if module.intro %}<div style="margin-top: 1rem;">{{ module.intro }}</div>{% endif %}
+  </div>
   <div class="team-grid">
     {% for member in module.members %}
       <div class="team-card">

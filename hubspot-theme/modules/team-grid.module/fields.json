@@ -1,4 +1,14 @@
 [
+  { "name": "eyebrow", "label": "Eyebrow (optional)", "required": false, "locked": false, "type": "text", "default": "" },
+  { "name": "heading", "label": "Heading", "required": false, "locked": false, "type": "text", "default": "Meet the team" },
+  {
+    "name": "intro",
+    "label": "Intro text (optional)",
+    "required": false,
+    "locked": false,
+    "type": "richtext",
+    "default": ""
+  },
   {
     "name": "members",
     "label": "Team members",
