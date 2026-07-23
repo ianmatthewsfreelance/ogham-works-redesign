@@ -1,18 +1,16 @@
-<div class="team-grid">
-  {% for member in module.members %}
-    <div class="team-card">
-      <div class="team-photo-wrap">
-        <div class="team-photo-accent" aria-hidden="true"></div>
+<div class="team-grid-wrap" style="padding: {{ module.spacing.padding.top.value }}{{ module.spacing.padding.top.units }} {{ module.spacing.padding.right.value }}{{ module.spacing.padding.right.units }} {{ module.spacing.padding.bottom.value }}{{ module.spacing.padding.bottom.units }} {{ module.spacing.padding.left.value }}{{ module.spacing.padding.left.units }}; margin: {{ module.spacing.margin.top.value }}{{ module.spacing.margin.top.units }} {{ module.spacing.margin.right.value }}{{ module.spacing.margin.right.units }} {{ module.spacing.margin.bottom.value }}{{ module.spacing.margin.bottom.units }} {{ module.spacing.margin.left.value }}{{ module.spacing.margin.left.units }};">
+  <div class="team-grid">
+    {% for member in module.members %}
+      <div class="team-card">
         {% if member.photo.src %}
           <img class="team-photo" src="{{ member.photo.src }}" alt="{{ member.photo.alt }}" loading="lazy">
         {% else %}
           <div class="team-photo team-photo-placeholder" aria-hidden="true"></div>
         {% endif %}
+        <h3>{{ member.full_name }}</h3>
+        <p class="team-role">{{ member.role }}</p>
+        {% if member.bio %}<div class="team-bio">{{ member.bio }}</div>{% endif %}
       </div>
-      <h3>{{ member.full_name }}</h3>
-      <p class="team-role">{{ member.role }}</p>
-      {% if member.bio %}<div class="team-bio">{{ member.bio }}</div>{% endif %}
-      {% if member.link_href %}<a class="team-link" href="{{ member.link_href }}">{{ member.link_label }}</a>{% endif %}
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
